@@ -1,0 +1,12 @@
+{
+  {"category": "HTML", "type": "multipleChoice", "question": "What does HTML stand for?", "correct_answer": "Hypertext Markup Language", "wrong_answers": ["Hyperlinks and Text Markup Language", "Head Text Marked Language", "Hypertext Modified Language"]},
+  {"category": "HTML", "type": "multipleChoice", "question": "What is the largest heading in HTML?", "correct_answer": "<h1>"", "wrong_answers": ["<h6>", "<heading>", "head" ]},
+  {"category": "HTML", "type": "multipleChoice", "question": "Which tag is used to create an ordered list?", "correct_answer": "<ol>", "wrong_answers": ["<ul>", "<li>", "<a>"]},
+  {"category": "HTML", "type": "textResponse", "question": "Type in below the correct tag for creating a hyperlink", "correct_answer": "<a>"},
+  {"category": "HTML", "type": "multipleChoice", "question": "What is the correct way to create a table", "correct_answer": "<table>", "wrong_answers": ["<t>", "<td>", "<tr>"]},
+  {"category": "Java", "type": "textResponse", "question": "Type in the correct method to output something in Java?", "correct_answer": "println()"},
+  {"category": "Java", "type": "multipleChoice", "question": "What is the correct data type to store text?", "correct_answer": "String", "wrong_answers": "string", "str", "Text"},
+  {"category": "Java", "type": "multipleChoice", "question": "Which is the correct way to declare an array?", "correct_answer": "[]", "wrong_answers": "()", "{}", "<>"},
+  {"category": "Java", "type": "multipleChoice", "question": "Which variable is used to store integers (whole numbers)?", "correct_answer": "int", "wrong_answers": "float", "String", "boolean"},
+  {"category": "Java", "type": "multipleChoice", "question": "What is another way of writing the notation x = x + 2", "correct_answer": "x +=2 ", "wrong_answers": "x = y - 2", "y = x - 2", "x -= 2"}
+}
