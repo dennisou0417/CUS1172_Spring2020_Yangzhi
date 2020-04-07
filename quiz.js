@@ -33,6 +33,9 @@ function validateName(){
   if(x == ""){
     alert("Name must be filled out to continue");
     return false;
+  }else{
+    enterNameElement.classList.add('hide')
+    quizSelectionElement.classList.remove('hide')
   }
 }
 
