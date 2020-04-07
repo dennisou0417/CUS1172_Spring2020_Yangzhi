@@ -1,3 +1,15 @@
+async function fetch_quiz(){
+  try{
+    const response = await fetch('http://my-json-server.typicode.com/dennisou0417/JSON-FILES/db')
+
+    const result = await response.json()
+
+    console.log(result);
+  } catch(err){
+    console.error(err);
+  }
+}
+
 const startButton = document.getElementById('start')
 const enterNameElement = document.getElementById('enterName')
 const continueButton = document.getElementById('continue')
@@ -18,6 +30,11 @@ function startQuiz(){
 }
 
 function enterName(){
+  var x = document.forms["nameForm"]["name"].value;
+  if(x == ""){
+    alert("Name must be filled out to continue");
+    return false;
+  }
   enterNameElement.classList.add('hide')
   quizSelectionElement.classList.remove('hide')
 }

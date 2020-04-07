@@ -23,8 +23,8 @@
 
       <div class="hide" id="enterName">
         <p><b>Enter your name below to begin</b></p>
-        <form action="/action_page.php">
-          <input type="text" id="name" name="name" required>
+        <form name="nameForm" onsubmit="return validateForm()">
+          <input type="text" id="name" name="name"
           <input type="submit" id="continue" value="CONTINUE">
         </form>
       </div>
