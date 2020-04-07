@@ -3,28 +3,59 @@
   <head>
     <title>Trivial Quiz</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="quiz.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="quiz.js" defer></script>
   </head>
 
   <body>
+
     <div class="jumbotron text-center">
       <h1> CUS 1172 Tutoring </h1>
     </div>
 
     <div class="container">
-      <div class="name">
+
+      <div id="welcome">
+        <h4> Welcome to HTML and Java tutoring, press START to begin the quiz</h4>
+        <button id="start">START</button>
+      </div>
+
+      <div class="hide" id="enterName">
         <p><b>Enter your name below to begin</b></p>
         <input type="text" id="name" name="name">
-        <button>Continue</button>
+        <button id="continue">Continue</button>
       </div>
 
-      <div class="quizselection">
+      <div class="hide" id="quizSelection">
         <h2> Quiz Selection </h2>
         <p> Select a quiz to take </p>
-        <input type="image" src="html.jpg" width="300" height="200">
-        <input type="image" src="java.jpeg" width="300" height="200">
+        <input id="html" type="image" src="html.jpg" width="300" height="200">
+        <input id="java" type="image" src="java.jpeg" width="300" height="200">
+        <p><b> Score 80% or higher to pass</b></p>
+      </div>
+
+      <div class="hide" id="question">
+        <p><b>Question</b></p>
+      </div>
+
+      <div class="hide" id="questionChoice">
+        <form>
+          <input type="radio" id="a" name="choices" value="a">
+          <label for="a">a.</label><br>
+          <input type="radio" id="b" name="choices" value="b">
+          <label for="b">b.</label><br>
+          <input type="radio" id="c" name="choices" value="c">
+          <label for="c">c.</label><br>
+          <input type="radio" id="d" name="choices" value="d">
+          <label for="d">d.</label><br>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+
+      <div class="hide" id="scoreTracker">
+        <h2>SCORE</h2>
       </div>
     </div>
-
   </body>
 </html>
