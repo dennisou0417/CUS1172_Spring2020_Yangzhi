@@ -32,7 +32,6 @@ function validateName(){
   var x = document.forms["nameForm"]["name"].value;
   if(x == ""){
     alert("Name must be filled out to continue");
-    return false;
   }else{
     enterNameElement.classList.add('hide')
     quizSelectionElement.classList.remove('hide')
