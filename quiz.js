@@ -28,7 +28,7 @@ function startQuiz(){
   enterNameElement.classList.remove('hide')
 }
 
-function validateText(){
+function validateName(){
   var x = document.forms["nameForm"]["name"].value;
   if(x == ""){
     alert("Name must be filled out to continue");
