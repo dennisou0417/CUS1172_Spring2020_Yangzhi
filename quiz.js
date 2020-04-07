@@ -29,7 +29,7 @@ function startQuiz(){
 }
 
 function enterName(){
-  var x = document.forms["nameForm"]["name"].value;
+  var x = document.getElementById["nameForm"]["name"].value;
   if(x == ""){
     alert("Name must be filled out to continue");
     return false;
