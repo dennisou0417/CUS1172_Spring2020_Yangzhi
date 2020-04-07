@@ -40,11 +40,6 @@ function validateName(){
   }
 }
 
-function enterName(){
-  enterNameElement.classList.add('hide')
-  quizSelectionElement.classList.remove('hide')
-}
-
 function quizChoice(){
   quizSelectionElement.classList.add('hide')
   questionElement.classList.remove('hide')
