@@ -20,6 +20,7 @@ const htmlButton = document.getElementById('html')
 const javaButton = document.getElementById('java')
 
 startButton.addEventListener('click', startQuiz)
+continueButton.addEventListener('click', enterName)
 htmlButton.addEventListener('click', quizChoice)
 javaButton.addEventListener('click', quizChoice)
 
@@ -28,12 +29,15 @@ function startQuiz(){
   enterNameElement.classList.remove('hide')
 }
 
-function enterName(){
+function validateText(){
   var x = document.getElementById["nameForm"]["name"].value;
   if(x == ""){
     alert("Name must be filled out to continue");
     return false;
   }
+}
+
+function enterName(){
   enterNameElement.classList.add('hide')
   quizSelectionElement.classList.remove('hide')
 }
