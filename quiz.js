@@ -36,6 +36,7 @@ function validateName(){
   }else{
     enterNameElement.classList.add('hide')
     quizSelectionElement.classList.remove('hide')
+    return false;
   }
 }
 
