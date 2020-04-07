@@ -20,7 +20,6 @@ const htmlButton = document.getElementById('html')
 const javaButton = document.getElementById('java')
 
 startButton.addEventListener('click', startQuiz)
-continueButton.addEventListener('click', enterName)
 htmlButton.addEventListener('click', quizChoice)
 javaButton.addEventListener('click', quizChoice)
 
