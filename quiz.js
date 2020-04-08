@@ -10,6 +10,8 @@ async function fetch_quiz(){
   }
 }
 
+fetch_quiz()
+
 const startButton = document.getElementById('start')
 const enterNameElement = document.getElementById('enterName')
 const continueButton = document.getElementById('continue')

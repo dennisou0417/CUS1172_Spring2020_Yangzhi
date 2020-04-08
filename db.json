@@ -5,118 +5,138 @@
     "type": "multipleChoice",
     "question": "What does HTML stand for?",
     "correct_answer": "Hypertext Markup Language",
-    "wrong_answers": ["Hyperlinks and Text Markup Language", "Head Text Marked Language", "Hypertext Modified Language"]
+    "wrong_answers": ["Hyperlinks and Text Markup Language", "Head Text Marked Language", "Hypertext Modified Language"],
+    "feedback": "All the other acronyms do not exist, it is a markup language."
   },
   {
     "type": "multipleChoice",
     "question": "What is the largest heading in HTML?",
     "correct_answer": "<h1>",
-    "wrong_answers": ["<h6>", "<heading>", "head" ]
+    "wrong_answers": ["<h6>", "<heading>", "head"],
+    "feedback": "Headings range from <h1> to <h6> the lower the number the more important the heading."
   },
   {
     "type": "multipleChoice",
     "question": "Which tag is used to create an ordered list?",
     "correct_answer": "<ol>",
-    "wrong_answers": ["<ul>", "<li>", "<a>"]
+    "wrong_answers": ["<ul>", "<li>", "<a>"],
+    "feedback": "<ol> stands for ordered list, <ul> is unordered list and <li> is used to list the items."
   },
   {
     "type": "textResponse",
     "question": "Type in below the correct tag for creating a hyperlink",
-    "correct_answer": "<a>"
+    "correct_answer": "<a>",
+    "feedback": "<a> is the main way to define a hyperlink."
   },
   {
     "type": "multipleChoice",
     "question": "What is the correct way to create a table",
     "correct_answer": "<table>",
-    "wrong_answers": ["<t>", "<td>", "<tr>"]
+    "wrong_answers": ["<t>", "<td>", "<tr>"],
+    "feedback": "<table> is the way to initiate a table and <t> is not a tag that exist. <td> is used to enter table data and <tr> is to define rows in the table."
   },
   {
     "type": "multipleChoice",
     "question": "Which tag is used for adding videos to a website?",
     "correct_answer": "<video>",
-    "wrong_answers": ["<media>", "<vid>", "<movie>"]
+    "wrong_answers": ["<media>", "<vid>", "<movie>"],
+    "feedback": "This was tricky, but <media>, <movie>, and <vid> doesn't exist as a tag."
   },
   {
     "type": "textResponse",
     "question": "How is a HTML5 document initialized?",
-    "correct_answer": "<!DOCTYPE html>"
+    "correct_answer": "<!DOCTYPE html>",
+    "feedback": "Other tags like <html> is used to start a HTML file, but to initialize the entire document use <!DOCTYPE html>"
   },
   {
     "type": "multipleChoice",
     "question": "Which tag is used for adding sound to a website?",
     "correct_answer": "<audio>",
-    "wrong_answers": ["<media>", "<sound>", "<mp3>"]
+    "wrong_answers": ["<media>", "<sound>", "<mp3>"],
+    "feedback": "<media>, <sound>, <mp3> all doesn't exist."
   },
   {
     "type": "multipleChoice",
     "question": "What is the correct way to make the text bold?",
     "correct_answer": "<b>",
-    "wrong_answers": ["<bold>", "<em>", "<imp>"]
+    "wrong_answers": ["<bold>", "<em>", "<imp>"],
+    "feedback": "<b> stands for bold, but <bold> is not a tag, while <em> is used to italicize words and <imp> doesn't exist."
   },
   {
     "type": "multipleChoice",
     "question": "What character is used to close a tag?",
     "correct_answer": "/",
-    "wrong_answers": ["*", "+", "-"]
+    "wrong_answers": ["*", "+", "-"],
+    "feedback": "Use / to close a tag."
   }],
   "java":[
   {
     "type": "textResponse",
     "question": "Type in the correct method to output something in Java?",
     "correct_answer": "println()"
+    "feedback": "println() displays the things that you are trying to print."
   },
   {
     "type": "multipleChoice",
     "question": "What is the correct data type to store text?",
     "correct_answer": "String",
-    "wrong_answers": ["string", "str", "Text"]
+    "wrong_answers": ["string", "str", "Text"],
+    "feedback": "String is the correct way, make sure it the 'S' is capitalized. The uncapitlize is used in C++. str is python and text is not used in Java."
   },
   {
     "type": "multipleChoice",
     "question": "Which is the correct way to declare an array?",
     "correct_answer": "[]",
-    "wrong_answers": ["()", "{}", "<>"]
+    "wrong_answers": ["()", "{}", "<>"],
+    "feedback": "Arrays are declared with '[]', '()' are used in methods and '{}' are used for classes."
   },
   {
     "type": "multipleChoice",
     "question": "Which variable is used to store integers (whole numbers)?",
     "correct_answer": "int",
-    "wrong_answers": ["float", "String", "boolean"]
+    "wrong_answers": ["float", "String", "boolean"],
+    "feedback": "int is used for integers, float is used for decimals, and String is used for collection of characters. Boolean is used for t (true) or f (false)."
   },
   {
     "type": "multipleChoice",
     "question": "What is another way of writing the notation x = x + 2",
     "correct_answer": "x += 2",
-    "wrong_answers": ["x = y - 2", "y = x - 2", "x -= 2"]
+    "wrong_answers": ["x = y - 2", "y = x - 2", "x -= 2"],
+    "feedback": "+= is used to add the variable with the value while have the return store as the variable."
   },
   {
     "type": "textResponse",
     "question": "What keyword is used to return a value in a method?",
     "correct_answer": "return"
+    "feedback": "return is used in a method to return the value."
   },
   {
     "type": "multipleChoice",
     "question": "Which is used to stop a loop?",
     "correct_answer": "break",
-    "wrong_answers": ["stop", "exit", "return"]
+    "wrong_answers": ["stop", "exit", "return"],
+    "feedback": "break implements a stop to the loop."
   },
   {
     "type": "multipleChoice",
     "question": "What is import used for?",
     "correct_answer": "To import a package from Java API library",
-    "wrong_answers": ["To import a method", "To import a variable", "To import an array"]
+    "wrong_answers": ["To import a method", "To import a variable", "To import an array"],
+    "feedback": "import is used to access the Java API library and import it into the java file."
   },
   {
     "type": "multipleChoice",
-    "question": "What operator is used to compare two values?",
+    "question": "What operator is used to compare two numeric values?",
     "correct_answer": "==",
-    "wrong_answers": ["=", ">", "<"]
+    "wrong_answers": ["=", ">", "<"],
+    "feedback": "== is used to compare two numeric values."
   },
   {
     "type": "multipleChoice",
     "question": "What method is used to find the size of a String?",
     "correct_answer": "length()",
-    "wrong_answers": ["getLength()", "size()", "getSize()"]
+    "wrong_answers": ["getLength()", "size()", "getSize()"],
+    "feedback": "length() is used to return the size of the String."
   }
   ]
 }
