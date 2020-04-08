@@ -73,7 +73,7 @@
   {
     "type": "textResponse",
     "question": "Type in the correct method to output something in Java?",
-    "correct_answer": "println()"
+    "correct_answer": "println()",
     "feedback": "println() displays the things that you are trying to print."
   },
   {
