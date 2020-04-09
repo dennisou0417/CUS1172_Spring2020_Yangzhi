@@ -16,8 +16,8 @@ const startButton = document.getElementById('start')
 const enterNameElement = document.getElementById('enterName')
 const continueButton = document.getElementById('continue')
 const quizSelectionElement = document.getElementById('quizSelection')
-const questionElement = document.getElementById('question')
-const questionChoiceElement = document.getElementById('questionChoice')
+const questionChoiceElement = document.getElementById('scoreTracker')
+const scoreElement = document.getElementById('questionAnswer')
 const htmlButton = document.getElementById('html')
 const javaButton = document.getElementById('java')
 
@@ -44,8 +44,12 @@ function validateName(){
 
 function quizChoice(){
   quizSelectionElement.classList.add('hide')
-  questionElement.classList.remove('hide')
   questionChoiceElement.classList.remove('hide')
+  scoreElement.classList.remove('hide')
+}
+
+function showQuestion(){
+
 }
 
 function nextQuestion(){
