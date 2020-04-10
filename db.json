@@ -1,6 +1,4 @@
-{
-  "html":
-  [
+{"html":[
   {
     "type": "multipleChoice",
     "question": "What does HTML stand for?",
@@ -277,5 +275,4 @@
     "wrong_answers": ["+", "x", "/"],
     "feedback": "* is used to multiple numbers in Java not the traditional x."
   }
-  ]
-}
+  ]}
