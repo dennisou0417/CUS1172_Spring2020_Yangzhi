@@ -68,7 +68,76 @@
     "correct_answer": "/",
     "wrong_answers": ["*", "+", "-"],
     "feedback": "Use / to close a tag."
-  }],
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What HTML element is used to inserting a line break?",
+    "correct_answer": "<br>",
+    "wrong_answers": ["<break>", "<brake>", "<line>"],
+    "feedback": "<br> is short for break."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What is the HTML element used for creating a bullet list?",
+    "correct_answer": "<ul>",
+    "wrong_answers": ["<bl>", "<list>", "<ol>"],
+    "feedback": "<ul> is an unordered list whereas <ol> is an ordered list."
+  },
+  {
+    "type": "textResponse",
+    "question": "What HTML attribute is used to define inline-styles directly on HTML element?",
+    "correct_answer": "style",
+    "feedback": "Only use style to define styles in a HTML file."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "How can you add a comment in HTML?",
+    "correct_answer": "<!-- and -->",
+    "wrong_answers": ["//", "/*", "comment"],
+    "feedback": "<!-- and --> is the correct way to leave a comment on HTML, // and /* is for Java."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Select the correct way to create a checkbox field.",
+    "correct_answer": "<input type = \"checkbox\">",
+    "wrong_answers": ["<input style = \"checkbox\">", "<input style = \"check\">", "<checkbox>"],
+    "feedback": "<input type=\"checkbox\"> is the correct way to create a checkbox field while the other choices does not exist."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "How many different headings are there?",
+    "correct_answer": "6",
+    "wrong_answers": ["1", "3", "4"],
+    "feedback": "Headings range from <h1> to <h6>."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Select the correct HTML syntax for creating a text input.",
+    "correct_answer": "<input type = \"text\">",
+    "wrong_answers": ["<textfield>", "<input type = \"textfield\">", "<input style = \"text\">"],
+    "feedback": "No need to put all the extra words as shown in the other choices just \"text\"."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Which is the correct way to set a background color for the HTML page?",
+    "correct_answer": "<body style=\"background-color:blue\">",
+    "wrong_answers": ["<body bg='yellow'>", "<background setColor:red>", "<body background-color=green>"],
+    "feedback": "style = background-color is the correct way to set a background color for the HTML page."
+  },
+  {
+    "type": "textResponse",
+    "question": "Enter below the correct tag to use when implementing JavaScript in HTML.",
+    "correct_answer": "<script>",
+    "feedback": "<script is correct way to implement JavaScript in the HTML file."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Which is the correct way to put a picture on the HTML page?",
+    "correct_answer": "<img>",
+    "wrong_answers": ["<image>", "<pic>", "<media>"],
+    "feedback": "<img> is the only one that exists in HTML."
+  }
+  ],
   "java":[
   {
     "type": "textResponse",
