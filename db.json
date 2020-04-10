@@ -1,5 +1,4 @@
-{"html":[
-  {"type":"multipleChoice","question":"What does HTML stand for?","correct_answer":"Hypertext Markup Language","wrong_answers":["Hyperlinks and Text Markup Language", "Head Text Marked Language", "Hypertext Modified Language"],"feedback":"All the other acronyms do not exist, it is a markup language."},
+{"html":[{"type":"multipleChoice","question":"What does HTML stand for?","correct_answer":"Hypertext Markup Language","wrong_answers":["Hyperlinks and Text Markup Language", "Head Text Marked Language", "Hypertext Modified Language"],"feedback":"All the other acronyms do not exist, it is a markup language."},
   {"type":"multipleChoice","question":"What is the largest heading in HTML?","correct_answer":"<h1>","wrong_answers":["<h6>", "<heading>", "head"],"feedback":"Headings range from <h1> to <h6> the lower the number the more important the heading."},
   {"type":"multipleChoice","question":"Which tag is used to create an ordered list?","correct_answer":"<ol>","wrong_answers":["<ul>", "<li>", "<a>"],"feedback":"<ol> stands for ordered list, <ul> is unordered list and <li> is used to list the items."},
   {"type":"textResponse","question":"Type in below the correct tag for creating a hyperlink","correct_answer":"<a>","feedback":"<a> is the main way to define a hyperlink."},
@@ -19,8 +18,7 @@
   {"type":"multipleChoice","question":"Which is the correct way to set a background color for the HTML page?","correct_answer":"<body style=\"background-color:blue\">","wrong_answers":["<body bg='yellow'>", "<background setColor:red>", "<body background-color=green>"],"feedback":"style = background-color is the correct way to set a background color for the HTML page."},
   {"type":"textResponse","question":"Enter below the correct tag to use when implementing JavaScript in HTML.","correct_answer":"<script>","feedback":"<script is correct way to implement JavaScript in the HTML file."},
   {"type":"multipleChoice","question":"Which is the correct way to put a picture on the HTML page?","correct_answer":"<img>","wrong_answers":["<image>", "<pic>", "<media>"],"feedback":"<img> is the only one that exists in HTML."}],
-  "java":[
-  {"type":"textResponse","question":"Type in the correct method to output something in Java?","correct_answer":"println()","feedback":"println() displays the things that you are trying to print."},
+  "java":[{"type":"textResponse","question":"Type in the correct method to output something in Java?","correct_answer":"println()","feedback":"println() displays the things that you are trying to print."},
   {"type":"multipleChoice","question":"What is the correct data type to store text?","correct_answer":"String","wrong_answers":["string", "str", "Text"],"feedback":"String is the correct way, make sure it the 'S' is capitalized. The uncapitlize is used in C++. str is python and text is not used in Java."},
   {"type":"multipleChoice","question":"Which is the correct way to declare an array?","correct_answer":"[]","wrong_answers":["()", "{}", "<>"],"feedback":"Arrays are declared with '[]', '()' are used in methods and '{}' are used for classes."},
   {"type":"multipleChoice","question":"Which variable is used to store integers (whole numbers)?","correct_answer":"int","wrong_answers":["float", "String", "boolean"],"feedback":"int is used for integers, float is used for decimals, and String is used for collection of characters. Boolean is used for t (true) or f (false)."},
@@ -39,5 +37,4 @@
   {"type":"multipleChoice","question":"What operator is used to end each line of code?","correct_answer":";","wrong_answers":["/", ">", "<"],"feedback":"; closes out each line of code."},
   {"type":"multipleChoice","question":"What is the correct way to create an object called myObj of myClass?","correct_answer":"myClass myObj = new myClass();","wrong_answers":["class myClass = new myObject;", "new myObj = myClass();", "class myObj = new myClass();"],"feedback":"The class goes first then object name and then call the class."},
   {"type":"multipleChoice","question":"Which method can be used to find the highest value between x and y?","correct_answer":"Math.max(x,y)","wrong_answers":["Math.maxNum(x,y)", "Math.largest(x,y)", "Math.maximum(x,y)"],"feedback":"Math.max() is the correct method that is part of the default java library."},
-  {"type":"multipleChoice","question":"Which operator is used to multiple numbers?","correct_answer":"*","wrong_answers":["+", "x", "/"],"feedback":"* is used to multiple numbers in Java not the traditional x."}
-  ]}
+  {"type":"multipleChoice","question":"Which operator is used to multiple numbers?","correct_answer":"*","wrong_answers":["+", "x", "/"],"feedback":"* is used to multiple numbers in Java not the traditional x."}]}
