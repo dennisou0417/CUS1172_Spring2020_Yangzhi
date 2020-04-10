@@ -206,6 +206,76 @@
     "correct_answer": "length()",
     "wrong_answers": ["getLength()", "size()", "getSize()"],
     "feedback": "length() is used to return the size of the String."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What operator is used to compare two numeric values?",
+    "correct_answer": "==",
+    "wrong_answers": ["=", ">", "<"],
+    "feedback": "== is used to compare two numeric values."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What is the method .equals() used for?",
+    "correct_answer": "Compare String variables.",
+    "wrong_answers": ["To set a String to a variable", "To compare two operators", "To compare packages."],
+    "feedback": ".equals() is used to compare two String instances."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What operator is used to add two values together?",
+    "correct_answer": "+",
+    "wrong_answers": ["-", "*", "<"],
+    "feedback": "+ is used to add."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Which method can be used to return a string in upper case letters?",
+    "correct_answer": "toUpperCase()",
+    "wrong_answers": ["upperCase()", "touppercase()", "capitalize()"],
+    "feedback": "toUpperCase() is the only valid method in Java."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Array indexes start with",
+    "correct_answer": "0",
+    "wrong_answers": ["1", "10", "2"],
+    "feedback": "Array start at position 0 due to the off by one error."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What is the correct way to create a method?",
+    "correct_answer": "methodName()",
+    "wrong_answers": ["methodName[]", "(methodName)", "<methodName>"],
+    "feedback": "methodName() is the correct way to create a method, methodName[] would be an array and the other two doesn't exist."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What operator is used to end each line of code?",
+    "correct_answer": ";",
+    "wrong_answers": ["/", ">", "<"],
+    "feedback": "; closes out each line of code."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "What is the correct way to create an object called myObj of myClass?",
+    "correct_answer": "myClass myObj = new myClass();",
+    "wrong_answers": ["class myClass = new myObject;", "new myObj = myClass();", "class myObj = new myClass();"],
+    "feedback": "The class goes first then object name and then call the class."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Which method can be used to find the highest value between x and y?",
+    "correct_answer": "Math.max(x,y)",
+    "wrong_answers": ["Math.maxNum(x,y)", "Math.largest(x,y)", "Math.maximum(x,y)"],
+    "feedback": "Math.max() is the correct method that is part of the default java library."
+  },
+  {
+    "type": "multipleChoice",
+    "question": "Which operator is used to multiple numbers?",
+    "correct_answer": "*",
+    "wrong_answers": ["+", "x", "/"],
+    "feedback": "* is used to multiple numbers in Java not the traditional x."
   }
   ]
 }
