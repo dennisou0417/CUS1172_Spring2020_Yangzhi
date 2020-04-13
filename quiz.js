@@ -16,7 +16,7 @@ const encouragementElement = document.getElementById('niceMsg');
 const endQuizElement = document.getElementById("endQuiz");
 
 const create_html_questions_field = async(questionNum) => {
-    const response = await fetch('http://my-json-server.typicode.com/dennisou0417/JSON-FILES/html');
+    const response = await fetch('https://my-json-server.typicode.com/dennisou0417/JSON-FILES/html');
     const result = await response.json();
     x = result[questionNum].type;
     if(x == "mc"){
@@ -91,7 +91,7 @@ const create_html_questions_field = async(questionNum) => {
 }
 }
 const create_java_questions_field = async(questionNum) => {
-    const response = await fetch('http://my-json-server.typicode.com/dennisou0417/JSON-FILES/java');
+    const response = await fetch('https://my-json-server.typicode.com/dennisou0417/JSON-FILES/java');
     const result = await response.json();
     x = result[questionNum].type;
     if(x == "mc"){
