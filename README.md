@@ -22,3 +22,5 @@ Yangzhi Ou
  A single page application
  Webpage is styled with CSS and Bootstrap. 
  Application hosted by Netlify
+The deployment process of the application was fairly simple after I figured it out. I used my desktop and Google Chrome for the deployment process. At the beginning of the process I ran into some issues with failed deployment because I was following a Netlify guide. The guide told me to end “dist” in the publish directory and for build to enter npm run build, but it turned out I didn’t need that. My issue was that my html file was not name index.html and that was why it was failing to deploy. After that the site deployed, but once it got the questions it was failing to access my JSON file. I had to edit my JavaScript file because in my asynchronous function, the website was calling a http:// site and I needed it to be https:// instead. After that it was smooth sailing. 
+https://confident-bassi-004cfe.netlify.com/
