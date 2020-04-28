@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivial Quiz</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quiz.css" media = "screen and (max-width:3000px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="quiz.js" defer></script>
+  </head>
+
+  <body>
+
+    <div class="jumbotron text-center">
+      <h1> CUS 1172 Tutoring </h1>
+    </div>
+
+    <div class="container">
+      <div id="welcome">
+        <h4> Welcome to HTML and Java tutoring, press START to begin the quiz</h4>
+        <button id="start">START</button>
+      </div>
+
+      <div class="hide" id="enterName">
+        <p><b>Enter your name below to begin</b></p>
+        <form name="nameForm" onsubmit="return validateName()">
+          <input type="text" id="name" name="name">
+          <input type="submit" id="continue" value="CONTINUE">
+        </form>
+      </div>
+
+      <div class="hide" id="quizSelection">
+        <h2> Quiz Selection </h2>
+        <p> Select a quiz to take </p>
+        <input id="html" type="image" src="html.jpg" width="300" height="200" onclick = "html()">
+        <input id="java" type="image" src="java.jpeg" width="300" height="200" onclick = "java()">
+        <p><b> Score 80% or higher to pass</b></p>
+      </div>
+
+      <div class="hide" id="niceMsg">
+        <h4 class="alert alert-success"> Keep Going!</h4>
+      </div>
+
+      <div class="hide" id="feedback">
+        <h4> FEEDBACK</h4>
+        <div class="alert alert-danger" id="feedbackView">
+        </div>
+      </div>
+
+      <div class="hide" id="next">
+          <button id="nextBtn">Next</button>
+      </div>
+
+      <div class="hide" id = "questionAnswer">
+
+      </div>
+
+      <div class="hide" id="endQuiz">
+        <h3>The test has ended!</h3>
+        <h5 id="passFail"></h5>
+        <p>Would you like to retake the quiz or return to the main menu?</p>
+        <button id="restart" onclick="restart()">RESTART </button>
+        <button id="mainMenu" onclick="mainMenu()">Main Menu </button>
+      </div>
+
+
+      <div class= "hide" id="scoreTime">
+      <div id="scoreTracker">
+        <h5 id = "score">SCORE: </h5>
+        <h5 id = "timer"></h5>
+      </div>
+    </div>
+</div>
+
+
+    <script id="mc_view" type="text/x-handlebars-template">
+      <div id="questionDiv">
+        <h4>{{question}}</h4>
+      </div>
+
+      <div id="answer-buttons" class="btn-grid">
+        <button class="answerbtn" data-correct={{correct1}}>{{a1}}</button>
+        <button class="answerbtn" data-correct={{correct2}}>{{a2}}</button>
+        <button class="answerbtn" data-correct={{correct3}}>{{a3}}</button>
+        <button class="answerbtn" data-correct={{correct4}}>{{a4}}</button>
+      </div>
+
+    </script>
+
+    <script id="tF_view" type="text/x-handlebars-template">
+      <div id="questionDiv">
+        <h4>{{question}}</h4>
+      </div>
+
+      <div id="tFBtns" class="btn-grid">
+        <button class="answerbtn" data-correct={{correct1}}>{{t}}</button>
+        <button class="answerbtn" data-correct={{correct2}}>{{f}}</button>
+      </div>
+    </script>
+
+    <script id="response" type="text/x-handlebars-template">
+      <div id="questionDiv">
+        <h4>{{question}}</h4>
+      </div>
+
+      <div id="answerField">
+        <form id="answerForm">
+          <input type="text" id="answer">
+          <input type="submit" value="Next">
+        </form>
+      </div>
+
+    </script>
+
+    <script id="feedback_view" type="text/x-handlebars-template">
+      <h5>{{feedback}} </h5>
+    </script>
+  </body>
+</html>
