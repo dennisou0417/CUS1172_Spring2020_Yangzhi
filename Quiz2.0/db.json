@@ -152,7 +152,7 @@
         "next_question": "107"
     }},
 		{
-      "id": "107"
+      "id": "107",
 			"type": "mc",
 			"q": "Which tag is used for adding sound to a website?",
 			"c1": [{
@@ -426,7 +426,7 @@
         "next_question": "118"
     }},
 		{
-      "id": "119"
+      "id": "119",
 			"type": "mc",
 			"q": "Which is the correct way to put a picture on the HTML page?",
 			"c1": [{
@@ -450,7 +450,7 @@
     {
       "meta":{
         "next_question": "-1"
-    }},
+    }}
 	],
 	"java": [{
       "id": "200",
@@ -884,6 +884,10 @@
 				"a": "f"
 			}],
 			"fb": "void is the only one that works in this case."
-		}
+		},
+		{
+      "meta":{
+        "next_question": "-1"
+    }}
 	]
 }
