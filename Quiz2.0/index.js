@@ -1,13 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 
-const data = require('./db.json');
+const routes = require('./routes/index');
 
 const app = express();
 
-app.get('/questions', (req, res) => {
-  res.send(data);
-});
+app.use('/api', routes);
+
+app.set('json spaces', 2);
 
 app.use((req, res) => {
   res.status(404)
