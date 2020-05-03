@@ -1,0 +1,815 @@
+{
+	"list": [{
+			"quizid": "1",
+			"title": "HTML",
+			"description": "Quiz on HTML"
+	},
+	{
+			"quizid": "2",
+			"title": "Java",
+			"description": "Quiz on Java"
+	}],
+	"data": [{
+			"quizid": "1",
+      "id": "100",
+			"type": "mc",
+			"q": "What does HTML stand for?",
+			"answerChoices": ["Hypertext Markup Language",
+				"Hyperlinks and Text Markup Language",
+				"Head Text Marked Language",
+				"Hypertext Modified Language"],
+			"meta":{
+	      "next_question": "101"
+			}
+		},
+
+		{
+			"quizid": "1",
+      "id": "101",
+			"type": "mc",
+			"q": "What is the largest heading in HTML?",
+			"answerChoices": ["<h6>",
+				"<h1>",
+				"<heading>",
+				"head"],
+			"meta":{
+        "next_question": "102"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "102",
+			"type": "mc",
+			"q": "Which tag is used to create an ordered list?",
+			"answerChoices": ["<ol>",
+				"<ul>",
+				"<li>",
+				"<a>"],
+			"meta":{
+        "next_question": "103"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "103",
+			"type": "tR",
+			"q": "Type in below the correct tag for creating a hyperlink",
+			"meta":{
+        "next_question": "104"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "104",
+			"type": "mc",
+			"q": "What is the correct way to create a table",
+			"answerChoices": ["<td>",
+			 "<t>",
+			 "<table>",
+			 "<tr>"],
+	    "meta":{
+	    	"next_question": "105"
+	    }
+		},
+
+		{
+			"quizid": "1",
+      "id": "105",
+			"type": "mc",
+			"q": "Which tag is used for adding videos to a website?",
+			"answerChoices": ["<video>",
+				"<media>",
+				"<vid>",
+				"<movie>"],
+			"meta":{
+        "next_question": "106"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "106",
+			"type": "tR",
+			"q": "How is a HTML5 document initialized?",
+			"meta":{
+        "next_question": "107"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "107",
+			"type": "mc",
+			"q": "Which tag is used for adding sound to a website?",
+			"answerChoices": ["<sound>",
+				"<media>",
+				"<audio>",
+				"<mp3>"],
+			"meta":{
+        "next_question": "108"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "108",
+			"type": "mc",
+			"q": "What is the correct way to make the text bold?",
+			"answerChoices": ["<imp>",
+				"<bold>",
+				"<em>",
+				"<b>"],
+			"meta":{
+        "next_question": "109"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "109",
+			"type": "tF",
+			"q": "/ is the character that is used to close a tag?",
+			"answerChoices": ["True",
+				 "False"],
+			"meta":{
+        "next_question": "110"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "110",
+			"type": "mc",
+			"q": "What HTML element is used to inserting a line break?",
+			"answerChoices": ["<break>",
+				"<br>",
+				"<brake>",
+				"<line>"],
+			"meta":{
+        "next_question": "111"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "111",
+			"type": "mc",
+			"q": "What is the HTML element used for creating a bullet list?",
+			"answerChoices": ["<list>",
+				"<bl>",
+				"<ul>",
+				"<li>"],
+			"meta":{
+        "next_question": "112"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "112",
+			"type": "tR",
+			"q": "What HTML attribute is used to define inline-styles directly on HTML element?",
+			"meta":{
+        "next_question": "113"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "113",
+			"type": "mc",
+			"q": "How can you add a comment in HTML?",
+			"answerChoices": ["<!-- and -->",
+				"//",
+			  "/*",
+				"comment"],
+			"meta":{
+        "next_question": "114"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "114",
+			"type": "mc",
+			"q": "Select the correct way to create a checkbox field.",
+			"answerChoices": ["<input type=\"checkbox\">",
+				"<input style=\"checkbox\">",
+				"<input style=\"check\">",
+				"<checkbox>"],
+			"meta":{
+        "next_question": "115"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "115",
+			"type": "mc",
+			"q": "How many different headings are there?",
+			"answerChoices": ["1",
+				"6",
+				"3",
+				"4"],
+			"meta":{
+        "next_question": "116"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "116",
+			"type": "mc",
+			"q": "Select the correct HTML syntax for creating a text input.",
+			"answerChoices": ["<input type=\"text\">",
+				"<textfield>",
+				"<input type=\"textfield\">",
+				"<input style=\"text\">"],
+			"meta":{
+        "next_question": "117"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "117",
+			"type": "mc",
+			"q": "Which is the correct way to set a background color for the HTML page?",
+			"answerChoices": ["<body bg='yellow'>",
+				"<body style=\"background-color:blue\">",
+				"<background setColor:red>",
+				"<body green>"],
+			"meta":{
+        "next_question": "118"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "118",
+			"type": "tR",
+			"q": "Enter below the correct tag to use when implementing JavaScript in HTML.",
+			"meta":{
+        "next_question": "119"
+    	}
+		},
+
+		{
+			"quizid": "1",
+      "id": "119",
+			"type": "mc",
+			"q": "Which is the correct way to put a picture on the HTML page?",
+			"answerChoices": ["<media>",
+				"<image>",
+				"<pic>",
+				"<img>"],
+			"meta":{
+        "next_question": "-1"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "200",
+			"type": "tR",
+			"q": "Type in the correct method to output something in Java?",
+			"meta":{
+        "next_question": "201"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "201",
+			"type": "mc",
+			"q": "What is the correct data type to store text?",
+			"answerChoices": ["String",
+				"string",
+				"str",
+				"Text"],
+			"meta":{
+        "next_question": "202"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "202",
+			"type": "mc",
+			"q": "Which is the correct way to declare an array?",
+			"answerChoices": ["<>",
+				"()",
+				"{}",
+				"[]"],
+			"meta":{
+        "next_question": "203"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "203",
+			"type": "mc",
+			"q": "Which variable is used to store integers?",
+			"answerChoices": ["i",
+				"int",
+				"String",
+				"boolean"],
+			"meta":{
+        "next_question": "204"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "204",
+			"type": "mc",
+			"q": "What is another way of writing the notation x=x+2",
+			"answerChoices": ["y=x-2",
+				"x=y-2",
+				"x+=2",
+				"x-=2"],
+			"meta":{
+        "next_question": "205"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "205",
+			"type": "tR",
+			"q": "What keyword is used to return a value in a method?",
+			"meta":{
+        "next_question": "206"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "206",
+			"type": "tR",
+			"q": "What keyword is used to stop a loop?",
+			"meta":{
+        "next_question": "207"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "207",
+			"type": "mc",
+			"q": "What is import used for?",
+			"answerChoices": ["To import a package from Java API library",
+				"To import a method",
+				"To import a variable",
+				"To import an array"],
+			"meta":{
+        "next_question": "208"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "208",
+			"type": "tR",
+			"q": "What operator is used to compare two numeric values?",
+			"meta":{
+        "next_question": "209"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "209",
+			"type": "mc",
+			"q": "What method is used to find the size of a String?",
+			"answerChoices": ["length()",
+				"String()",
+				"size()",
+				"getSize()"],
+			"meta":{
+        "next_question": "210"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "210",
+			"type": "mc",
+			"q": "What is the method .equals() used for?",
+			"answerChoices": ["Compare String variables.",
+				"To set a String to a variable",
+				"To compare two operators",
+				"To compare packages."],
+			"meta":{
+        "next_question": "211"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "211",
+			"type": "tR",
+			"q": "What operator is used to add two values together?",
+			"meta":{
+        "next_question": "212"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "212",
+			"type": "tF",
+			"q": "upperCase() is the method used to return a String in upper case letters?",
+			"answerChoices": ["True",
+				"False"],
+			"meta":{
+        "next_question": "213"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "213",
+			"type": "mc",
+			"q": "Array indexes start with",
+			"answerChoices": ["1",
+				"0",
+				"10",
+				"2"],
+			"meta":{
+        "next_question": "214"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "214",
+			"type": "mc",
+			"q": "What is the correct way to create a method?",
+			"answerChoices": ["(name)",
+				"name[]",
+				"name()",
+				"<name>"],
+			"meta":{
+        "next_question": "215"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "215",
+			"type": "mc",
+			"q": "What operator is used to end each line of code?",
+			"answerChoices": ["<",
+				"/",
+				">",
+				";"],
+			"meta":{
+        "next_question": "216"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "216",
+			"type": "mc",
+			"q": "What is the correct way to create an object called myObj of myClass?",
+			"answerChoices": ["myClass myObj=new myClass();",
+				"class myClass=new myObject;",
+				"new myObj=myClass();",
+				"class myObj=new myClass();"],
+			"meta":{
+        "next_question": "217"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "217",
+			"type": "mc",
+			"q": "Which method can be used to find the highest value between x and y?",
+			"answerChoices": ["Math.maxNum(x,y)",
+				"Math.max(x,y)",
+				"Math.largest(x,y)",
+				"Math.maximum(x,y)"],
+			"meta":{
+        "next_question": "218"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "218",
+			"type": "mc",
+			"q": "Which operator is used to multiple numbers?",
+			"answerChoices": ["x",
+				"+",
+				"*",
+				"/"],
+			"meta":{
+        "next_question": "219"
+    	}
+		},
+
+		{
+			"quizid": "2",
+      "id": "219",
+			"type": "mc",
+			"q": "Which keyword keeps the main method from returning any value?",
+			"answerChoices": ["restricted",
+				"concealed",
+				"void",
+				"null"],
+			"meta":{
+        "next_question": "-1"
+    }
+		}
+
+	],
+
+		"answers": [{
+			"quizid": "1",
+			"id": "100",
+			"answer": "Hypertext Markup Language",
+			"correct": "",
+			"fb": "All the other acronyms do not exist, it is a markup language."
+		},
+		{
+			"quizid": "1",
+      "id": "101",
+			"answer": "<h1>",
+			"correct": "",
+			"fb": "Headings range from <h1> to <h6> the lower the number the more important the heading."
+		},
+		{
+			"quizid": "1",
+      "id": "102",
+			"answer": "<ol>",
+			"correct": "",
+			"fb": "<ol> stands for ordered list, <ul> is unordered list and <li> is used to list the items."
+		},
+		{
+			"quizid": "1",
+      "id": "103",
+			"answer": "<a>",
+			"correct": "",
+			"fb": "<a> is the main way to define a hyperlink."
+		},
+		{
+			"quizid": "1",
+      "id": "104",
+			"answer": "<table>",
+			"correct": "",
+			"fb": "<table> is the way to initiate a table and <t> is not a tag that exist. <td> is used to enter table data and <tr> is to define rows in the table."
+		},
+		{
+			"quizid": "1",
+      "id": "105",
+			"answer": "<video>",
+			"correct": "",
+			"fb": "This was tricky, but <media>, <movie>, and <vid> doesn't exist as a tag."
+		},
+		{
+			"quizid": "1",
+      "id": "106",
+			"answer": "<!DOCTYPE html>",
+			"correct": "",
+			"fb": "Other tags like <html> is used to start a HTML file, but to initialize the entire document use <!DOCTYPE html>"
+		},
+		{
+			"quizid": "1",
+      "id": "107",
+			"answer": "<audio>",
+			"correct": "",
+			"fb": "<media>, <sound>, <mp3> all doesn't exist."
+		},
+		{
+			"quizid": "1",
+      "id": "108",
+			"answer": "<b>",
+			"correct": "",
+			"fb": "<b> stands for bold, but <bold> is not a tag, while <em> is used to italicize words and <imp> doesn't exist."
+		},
+		{
+			"quizid": "1",
+      "id": "109",
+			"answer": "True",
+			"correct": "",
+			"fb": "Use / to close a tag."
+		},
+		{
+			"quizid": "1",
+      "id": "110",
+			"answer": "<br>",
+			"correct": "",
+			"fb": "<br> is short for break."
+		},
+		{
+			"quizid": "1",
+      "id": "111",
+			"answer": "<ul>",
+			"correct": "",
+			"fb": "<ul> is an unordered list."
+		},
+		{
+			"quizid": "1",
+      "id": "112",
+			"answer": "style",
+			"correct": "",
+			"fb": "Only use style to define styles in a HTML file."
+		},
+		{
+			"quizid": "1",
+      "id": "113",
+			"answer": "<!-- and -->",
+			"correct": "",
+			"fb": "<!-- and --> is the way to leave a comment on HTML."
+		},
+		{
+			"quizid": "1",
+      "id": "114",
+			"answer": "<input type=\"checkbox\">",
+			"correct": "",
+			"fb": "<input type=\"checkbox\"> is the correct way to create a checkbox field."
+		},
+		{
+			"quizid": "1",
+      "id": "115",
+			"answer": "6",
+			"correct": "",
+			"fb": "Headings range from <h1> to <h6>."
+		},
+		{
+			"quizid": "1",
+      "id": "116",
+			"answer": "<input type=\"text\">",
+			"correct": "",
+			"fb": "<input type=\"textfield\"> is the correct way."
+		},
+		{
+			"quizid": "1",
+      "id": "117",
+			"answer": "<body style=\"background-color:blue\">",
+			"correct": "",
+			"fb": "style=background-color is the correct way to set a background color for the HTML page."
+		},
+		{
+			"quizid": "1",
+      "id": "118",
+			"answer": "<script>",
+			"correct": "",
+			"fb": "<script> is correct way to implement JavaScript in the HTML file."
+		},
+		{
+			"quizid": "1",
+      "id": "119",
+			"answer": "<img>",
+			"correct": "",
+			"fb": "<img> is correct way to add pictures."
+		},
+		{
+			"quizid": "2",
+      "id": "200",
+			"answer": "println()",
+			"correct": "",
+			"fb": "println() displays the things that you are trying to print."
+		},
+		{
+			"quizid": "2",
+      "id": "201",
+			"answer": "String",
+			"correct": "",
+			"fb": "String is the correct way, make sure it the 'S' is capitalized. The uncapitlize is used in C++."
+		},
+		{
+			"quizid": "2",
+      "id": "202",
+			"answer": "[]",
+			"correct": "",
+			"fb": "Arrays are declared with '[]', '()' are used in methods and '{}' are used for classes."
+		},
+		{
+			"quizid": "2",
+      "id": "203",
+			"answer": "int",
+			"correct": "",
+			"fb": "int is used for integers and String is used for collection of characters. Boolean is used for true or false."
+		},
+		{
+			"quizid": "2",
+      "id": "204",
+			"answer": "x+=2",
+			"correct": "",
+			"fb": "+= is used to add the variable with the value while the returned store as the variable."
+		},
+		{
+			"quizid": "2",
+      "id": "205",
+			"answer": "return",
+			"correct": "",
+			"fb": "return is used in a method to return the value."
+		},
+		{
+			"quizid": "2",
+      "id": "206",
+			"answer": "break",
+			"correct": "",
+			"fb": "break stops the loop."
+		},
+		{
+			"quizid": "2",
+      "id": "207",
+			"answer": "To import a package from Java API library",
+			"correct": "",
+			"fb": "import is used to access the Java API library and import it into the java file."
+		},
+		{
+			"quizid": "2",
+      "id": "208",
+			"answer": "==",
+			"correct": "",
+			"fb": "== is used to compare two numeric values."
+		},
+		{
+			"quizid": "2",
+      "id": "209",
+			"answer": "length()",
+			"correct": "",
+			"fb": "length() is used to return the size of the String."
+		},
+		{
+			"quizid": "2",
+      "id": "210",
+			"answer": "Compare String variables.",
+			"correct": "",
+			"fb": ".equals() is used to compare two String instances."
+		},
+		{
+			"quizid": "2",
+      "id": "211",
+			"answer": "+",
+			"correct": "",
+			"fb": "+ is used to add."
+		},
+		{
+			"quizid": "2",
+      "id": "212",
+			"answer": "False",
+			"correct": "",
+			"fb": "toUpperCase() is the correct method to use."
+		},
+		{
+			"quizid": "2",
+      "id": "213",
+			"answer": "0",
+			"correct": "",
+			"fb": "Array start at position 0 due to the off by one error."
+		},
+		{
+			"quizid": "2",
+      "id": "214",
+			"answer": "name()",
+			"correct": "",
+			"fb": "name() is the correct way to create a method, methodName[] would be an array."
+		},
+		{
+			"quizid": "2",
+      "id": "215",
+			"answer": ";",
+			"correct": "",
+			"fb": "; closes out each line of code."
+		},
+		{
+			"quizid": "2",
+      "id": "216",
+			"answer": "myClass myObj=new myClass();",
+			"correct": "",
+			"fb": "Class goes first then object name and then call the class."
+		},
+		{
+			"quizid": "2",
+      "id": "217",
+			"answer": "Math.max(x,y)",
+			"correct": "",
+			"fb": "Math.max() is the correct method that is part of the default java library."
+		},
+		{
+			"quizid": "2",
+      "id": "218",
+			"answer": "*",
+			"correct": "",
+			"fb": "* is used to multiple numbers in Java not the traditional x."
+		},
+		{
+			"quizid": "2",
+      "id": "219",
+			"answer": "void",
+			"correct": "",
+			"fb": "void is the only one that works in this case."
+		}
+	]
+}
