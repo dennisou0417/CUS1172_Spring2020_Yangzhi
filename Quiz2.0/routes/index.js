@@ -6,7 +6,7 @@ const data = require('../db.json');
 
 router.get('/quiz/list', function(req,res){
   res.json(data.list);
-})
+});
 
 router.get('/quiz/:quizid', function(req,res){
   var quizid = req.params['quizid'];
@@ -29,6 +29,25 @@ router.get('/quiz/:quizid/:questionid', function(req,res){
   }else{
     res.json(req_questionid);
   }
+
+});
+
+router.get('/check_answer/:quizid/:questionid/:answer', function(req,res){
+  var quizid = req.params['quizid'];
+  var questionid = req.params['questionid'];
+  var answer = req.query.answer;
+
+  req_quizid = data.answers.filter(q => q.quizid == quizid);
+  req_questionid = data.answers.filter(q => q.id == questionid);
+  var index = data.answers.findIndex(q => q.id == questionid);
+
+    if(answer == data.answers[index].answer){
+      data.answers[index].correct = "true";
+      res.json(req_questionid);
+    }else{
+      data.answers[index].correct = "false";
+      res.json(req_questionid);
+    }
 
 });
 
