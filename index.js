@@ -13,8 +13,8 @@ app.use((req, res) => {
     .send('Unknown Request');
 });
 
-var port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
-  console.log('App is listening on port ${port}');
+  console.log(`App is listening on port ${port}`);
 });
