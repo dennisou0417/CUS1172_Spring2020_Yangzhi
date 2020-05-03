@@ -1,7 +1,7 @@
 {
   "name": "quiz2.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "project 5",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -12,7 +12,16 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
   },
-	"engines":{
-		"node": "12.16.2"
-	}
+  "engines": {
+    "node": "12.16.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennisou0417/CUS1172_Spring2020_Yangzhi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dennisou0417/CUS1172_Spring2020_Yangzhi/issues"
+  },
+  "homepage": "https://github.com/dennisou0417/CUS1172_Spring2020_Yangzhi#readme"
 }
