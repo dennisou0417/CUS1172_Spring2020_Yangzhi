@@ -4,6 +4,10 @@ const routes = require('./routes/index');
 
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('use /api/quiz/list or /api/quiz/:quizid or /api/quiz/:quizid/:questionid or /api//check_answer/:quizid/:questionid/:answer');
+})
+
 app.use('/api', routes);
 
 app.set('json spaces', 2);

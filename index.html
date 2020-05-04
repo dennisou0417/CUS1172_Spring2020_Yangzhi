@@ -37,6 +37,8 @@
         <p> Select a quiz to take </p>
         <input id="html" type="image" src="html.jpg" width="300" height="200" onclick = "html()">
         <input id="java" type="image" src="java.jpeg" width="300" height="200" onclick = "java()">
+        <div id = "quizDescription"> </div>
+
         <p><b> Score 80% or higher to pass</b></p>
       </div>
 
@@ -53,6 +55,8 @@
       <div class="hide" id="next">
           <button id="nextBtn">Next</button>
       </div>
+
+
 
       <div class="hide" id = "questionAnswer">
 
@@ -75,6 +79,11 @@
     </div>
 </div>
 
+    <script id="quizDescription_view" type="text/x-handlebars-template">
+
+      <p>{{descrip1}}&emsp;&emsp;{{descrip2}}</p>
+
+    </script>
 
     <script id="mc_view" type="text/x-handlebars-template">
       <div id="questionDiv">
@@ -82,10 +91,10 @@
       </div>
 
       <div id="answer-buttons" class="btn-grid">
-        <button class="answerbtn" data-correct={{correct1}}>{{a1}}</button>
-        <button class="answerbtn" data-correct={{correct2}}>{{a2}}</button>
-        <button class="answerbtn" data-correct={{correct3}}>{{a3}}</button>
-        <button class="answerbtn" data-correct={{correct4}}>{{a4}}</button>
+        <button class="answerbtn" >{{a1}}</button>
+        <button class="answerbtn" >{{a2}}</button>
+        <button class="answerbtn" >{{a3}}</button>
+        <button class="answerbtn" >{{a4}}</button>
       </div>
 
     </script>
@@ -96,8 +105,8 @@
       </div>
 
       <div id="tFBtns" class="btn-grid">
-        <button class="answerbtn" data-correct={{correct1}}>{{t}}</button>
-        <button class="answerbtn" data-correct={{correct2}}>{{f}}</button>
+        <button class="answerbtn" >{{t}}</button>
+        <button class="answerbtn" >{{f}}</button>
       </div>
     </script>
 
