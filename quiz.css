@@ -87,11 +87,17 @@ body{
 	padding: 10px 32px;
 	color: black;
 	outline: none;
-	bottom: 25%;
-	position: absolute;
 	box-shadow: 0 0 10px 2px;
-	right: 30%;
 	font-size: 30px;
+}
+
+.container #next{
+	position: absolute;
+}
+
+#next{
+	right: 2%;
+	bottom: 2%;
 }
 
 #endQuiz{
@@ -107,9 +113,13 @@ body{
   padding: 10px;
 }
 
-#scoreTime{
+.container #scoreTime{
 	position: absolute;
+}
+
+#scoreTime{
 	bottom: 2%;
+	left: 2%;
 }
 
 
