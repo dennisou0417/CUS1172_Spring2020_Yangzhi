@@ -115,9 +115,11 @@
         <h4>{{question}}</h4>
       </div>
 
-      <div id="answerField">
+      <div id="answerField" onsubmit = "textResponse()">
+        <form id="answerForm">
           <input type="text" id="answer">
-          <button type="submit" data-next = {{next}} value="Next" onclick = "textResponse()"> Next </button>
+          <input type="submit" data-next = {{next}} value="Next">
+        </form>
       </div>
 
     </script>

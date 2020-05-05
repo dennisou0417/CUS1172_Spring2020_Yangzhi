@@ -186,7 +186,6 @@ const textResponse = async() =>{
   const response = await fetch('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/check_answer/' + app_state.quiz + '/' + app_state.questionID + '/' + '1?answer=' + answerIn.value);
   const result = await response.json();
 
-  //const next = e.target.dataset.next;
       if(result[0].correct == "true"){
         app_state.questionCorrect+=1;
         app_state.questionNum+=1;
