@@ -54,9 +54,7 @@ const create_questions_field = async() => {
       next:result[0].meta.next_question,
     }
     document.querySelector("#questionAnswer").innerHTML = render_question(resultAfter, "#response");
-
     textResponse();
-
   }
 }
 
@@ -139,7 +137,7 @@ const selectAnswer = async(e) =>{
   const answer = e.target.dataset.answer;
   const next = e.target.dataset.next;
 
-  const response = await fetch('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/check_answer/' + app_state.quiz + '/' + app_state.questionID + '/' + '1?answer=' + answer);
+  const response = await fetch('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/check_answer/' + app_state.quiz + '/' + app_state.questionID + '/1?answer=' + answer);
   const result = await response.json();
 
   const resultAfter = {
@@ -187,45 +185,45 @@ const selectAnswer = async(e) =>{
 const textResponse = async() =>{
   const answerField = document.getElementById("answerForm");
   const answerIn = document.getElementById("answer");
-  const response = await fetch('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/check_answer/' + app_state.quiz + '/' + app_state.questionID + '/' + '1?answer=' + answerIn.value);
+  const response = await fetch('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/check_answer/' + app_state.quiz + '/' + app_state.questionID + '/1?answer=' + answerIn.value);
   const result = await response.json();
   answerField.addEventListener('submit', onNext);
-  console.log(answerIn.value);
   function onNext(e){
   const next = e.target.dataset.next;
+  console.log(answerIn.value);
   e.preventDefault();
-      if(result[0].correct == "true"){
-        app_state.questionCorrect+=1;
-        app_state.questionNum+=1;
-        app_state.questionID += 1;
-        encouragement();
-        score();
+    if(result[0].correct == "true"){
+      app_state.questionCorrect+=1;
+      app_state.questionNum+=1;
+      app_state.questionID += 1;
+      encouragement();
+      score();
+      if(next != "-1"){
+        setTimeout(()=>questionChoiceElement.classList.remove('hide'),1000);
+        create_questions_field();
+      }else{
+        endTest();
+      }
+    }else if(result[0].correct == "false"){
+      app_state.questionIncorrect+=1;
+      app_state.questionNum+=1;
+      app_state.questionID += 1;
+      score();
+      document.getElementById("feedback").classList.remove('hide');
+      document.getElementById("next").classList.remove('hide');
+      questionChoiceElement.classList.add("hide");
+      document.getElementById("next").onclick = function(){
         if(next != "-1"){
-          setTimeout(()=>questionChoiceElement.classList.remove('hide'),1000);
+          document.getElementById("feedback").classList.add('hide');
+          document.getElementById("next").classList.add('hide');
           create_questions_field();
+          questionChoiceElement.classList.remove("hide");
         }else{
           endTest();
         }
-      }else if(result[0].correct == "false"){
-        app_state.questionIncorrect+=1;
-        app_state.questionNum+=1;
-        app_state.questionID += 1;
-        score();
-        document.getElementById("feedback").classList.remove('hide');
-        document.getElementById("next").classList.remove('hide');
-        questionChoiceElement.classList.add("hide");
-        document.getElementById("next").onclick = function(){
-          if(next != "-1"){
-            document.getElementById("feedback").classList.add('hide');
-            document.getElementById("next").classList.add('hide');
-            create_questions_field();
-            questionChoiceElement.classList.remove("hide");
-          }else{
-            endTest();
-          }
-        }
       }
     }
+  }
 }
 
 function resetAppState(){
