@@ -13,6 +13,8 @@ const scoreElement = document.getElementById('scoreTime');
 const encouragementElement = document.getElementById('niceMsg');
 const endQuizElement = document.getElementById("endQuiz");
 
+var next = "0";
+
 const quizList = async() =>{
   const response = await fetch ('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/quiz/list');
   const result = await response.json();
@@ -49,12 +51,11 @@ const create_questions_field = async() => {
     }
     document.querySelector("#questionAnswer").innerHTML = render_question(resultAfter,"#tF_view");
   }else if(x == "tR"){
+    next = result[0].meta.next_question;
     const resultAfter = {
       question:result[0].q,
-      next:result[0].meta.next_question,
     }
     document.querySelector("#questionAnswer").innerHTML = render_question(resultAfter, "#response");
-    textResponse();
   }
 }
 
@@ -183,15 +184,9 @@ const selectAnswer = async(e) =>{
 }
 
 const textResponse = async() =>{
-  const answerField = document.getElementById("answerForm");
   const answerIn = document.getElementById("answer");
   const response = await fetch('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/check_answer/' + app_state.quiz + '/' + app_state.questionID + '/1?answer=' + answerIn.value);
   const result = await response.json();
-  answerField.addEventListener('submit', onNext);
-  function onNext(e){
-  const next = e.target.dataset.next;
-  console.log(answerIn.value);
-  e.preventDefault();
     if(result[0].correct == "true"){
       app_state.questionCorrect+=1;
       app_state.questionNum+=1;
@@ -222,7 +217,7 @@ const textResponse = async() =>{
           endTest();
         }
       }
-    }
+
   }
 }
 
