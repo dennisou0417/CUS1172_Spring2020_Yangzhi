@@ -91,10 +91,10 @@
       </div>
 
       <div id="answer-buttons" class="btn-grid">
-        <button class="answerbtn" >{{a1}}</button>
-        <button class="answerbtn" >{{a2}}</button>
-        <button class="answerbtn" >{{a3}}</button>
-        <button class="answerbtn" >{{a4}}</button>
+        <button class="answerbtn" data-answer='{{a1}}' data-next = {{next}}>{{a1}}</button>
+        <button class="answerbtn" data-answer='{{a2}}' data-next = {{next}}>{{a2}}</button>
+        <button class="answerbtn" data-answer='{{a3}}' data-next = {{next}}>{{a3}}</button>
+        <button class="answerbtn" data-answer='{{a4}}' data-next = {{next}}>{{a4}}</button>
       </div>
 
     </script>
@@ -105,8 +105,8 @@
       </div>
 
       <div id="tFBtns" class="btn-grid">
-        <button class="answerbtn" >{{t}}</button>
-        <button class="answerbtn" >{{f}}</button>
+        <button class="answerbtn" data-answer='{{a1}}' data-next = {{next}}>{{t}}</button>
+        <button class="answerbtn" data-answer='{{a2}}' data-next = {{next}}>{{f}}</button>
       </div>
     </script>
 
@@ -116,10 +116,8 @@
       </div>
 
       <div id="answerField">
-        <form id="answerForm">
           <input type="text" id="answer">
-          <input type="submit" value="Next">
-        </form>
+          <button type="submit" data-next = {{next}} value="Next" onclick = "textResponse()"> Next </button>
       </div>
 
     </script>
