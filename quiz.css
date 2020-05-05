@@ -21,6 +21,7 @@ body{
   background-color: white;
   box-shadow: 0 0 10px 2px;
   text-align: center;
+	position: relative;
 }
 
 #welcome{
@@ -103,10 +104,14 @@ body{
   background-color: lightblue;
   border-radius: 5px;
   box-shadow: 0 0 10px 2px;
-  position: absolute;
   padding: 10px;
-  bottom:25%;
 }
+
+#scoreTime{
+	position: absolute;
+	bottom: 2%;
+}
+
 
 #timer{
 	display:inline-block;
