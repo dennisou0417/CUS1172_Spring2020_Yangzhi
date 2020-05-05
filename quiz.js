@@ -54,6 +54,9 @@ const create_questions_field = async() => {
       next:result[0].meta.next_question,
     }
     document.querySelector("#questionAnswer").innerHTML = render_question(resultAfter, "#response");
+
+    textResponse();
+
   }
 }
 
@@ -145,7 +148,7 @@ const selectAnswer = async(e) =>{
 
   document.querySelector("#feedbackView").innerHTML = render_question(resultAfter,"#feedback_view");
 
-    if(result[0].correct == "true"){
+    if(result[0].correct == "true" && e.target.className == "answerbtn"){
       app_state.questionCorrect+=1;
       app_state.questionNum+=1;
       app_state.questionID += 1;
@@ -157,7 +160,7 @@ const selectAnswer = async(e) =>{
       }else{
         endTest();
       }
-    }else if(result[0].correct == "false"){
+    }else if(result[0].correct == "false" &&  e.target.className == "answerbtn"){
       app_state.questionIncorrect+=1;
       app_state.questionNum+=1;
       app_state.questionID += 1;
@@ -182,10 +185,15 @@ const selectAnswer = async(e) =>{
 }
 
 const textResponse = async() =>{
+  const answerField = document.getElementById("answerForm");
   const answerIn = document.getElementById("answer");
   const response = await fetch('https://cors-anywhere.herokuapp.com/https://cus1172quiz.herokuapp.com/api/check_answer/' + app_state.quiz + '/' + app_state.questionID + '/' + '1?answer=' + answerIn.value);
   const result = await response.json();
-
+  answerField.addEventListener('submit', onNext);
+  console.log(answerIn.value);
+  function onNext(e){
+  const next = e.target.dataset.next;
+  e.preventDefault();
       if(result[0].correct == "true"){
         app_state.questionCorrect+=1;
         app_state.questionNum+=1;
@@ -217,7 +225,7 @@ const textResponse = async() =>{
           }
         }
       }
-
+    }
 }
 
 function resetAppState(){
